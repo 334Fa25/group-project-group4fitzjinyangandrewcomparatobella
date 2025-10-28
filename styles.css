@@ -37,7 +37,7 @@ nav ul li a:hover {
   background-color: #3A5A40;
 }
 
-/* Style Rules for body, images, and text*/
+/* Style Rules for body and images*/
 
 body {
   background-color: #DAD7CD;
@@ -47,3 +47,11 @@ body {
   max-width: 100%;
   display: block;
 }
+
+/* Styles for Home page */
+
+
+
+/*Style Rules for Blog page*/
+
+.blog 
