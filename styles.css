@@ -10,6 +10,13 @@ body, header, nav, main, footer, h1, div, img, ul {
   border: 0;
 }
 
+/* Base */
+body{
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f4f4ef;
+  color: #2b2b2b;
+}
+
 /* NAV */
 nav ul {
   list-style-type: none;
@@ -37,4 +44,49 @@ nav ul li a:hover {
   background-color: #3A5A40;
 }
 
-/* Styles for Home page */
+.logo{
+  
+}
+
+/* All Links */
+
+/* Styles for All pages */
+h2{ 
+
+}
+
+main{
+  
+}
+
+img{
+  max-width: 100%
+}
+
+ul{
+  
+}
+
+li{
+  
+}
+
+/* Styles for Home Page */
+mission-box{
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  background: rgba((255, 255, 255, 0.9);
+  padding: 1.5rem;
+  max-width: 350px;
+  border-radius: 8px;
+}
+button{ 
+
+}
+
+main ul{
+  display: block
+    inline-blockleft
+}
+
