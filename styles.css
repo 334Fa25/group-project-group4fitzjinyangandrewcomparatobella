@@ -36,3 +36,14 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #3A5A40;
 }
+
+/* Style Rules for body, images, and text*/
+
+body {
+  background-color: #DAD7CD;
+}
+
+  img {
+  max-width: 100%;
+  display: block;
+}
