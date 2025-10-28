@@ -4,109 +4,109 @@ Date: today >:/
 File name: style.class*/
 
 /*CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul {
-  margin: 0;
-  padding: 0;
-  border: 0;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-/* Base */
-body{
-  font-family: "Poppins", Arial, sans-serif;
-  background-color: #f4f4ef;
-  color: #2b2b2b;
+a {
+    font-family: sans-serif;
 }
 
 /* NAV */
+
+nav {
+    background: #5e7c55;
+}
+
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #588157;
-  display: flex;
-  justify-content: center;
-  
-  position: fixed;
-  top: 0;
-  width: 100%;
+    list-style-type: none;
+    background-color: #588157;
+    align-items: center;
+    display: flex;
 }
 
-nav ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 1.5em 3em;
-  margin: 0 2em 0 2em;
-  text-decoration: none;
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 30px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    transition: background 0.25s, color 0.25s;
 }
 
-nav ul li a:hover {
-  background-color: #3A5A40;
+nav a:hover {
+    background-color: #3A5A40;
 }
 
-
-.logo{
-  
+nav ul li:last-child a {
+    background-color: #000;
+    color: white;
+    border-radius: 12px;
+    padding: 15px 15px 15px 15px;
+    height: auto;
 }
 
-/* All Links */
-
-/* Styles for All pages */
-h2{ 
-
-}
-
-main{
-  
-}
-
-img{
-  max-width: 100%
-}
-
-ul{
-  
-}
-
-li{
-  
-}
-
-/* Styles for Home Page */
-mission-box{
-  position: absolute;
-  top: 20%;
-  right: 10%;
-  background: rgba((255, 255, 255, 0.9);
-  padding: 1.5rem;
-  max-width: 350px;
-  border-radius: 8px;
-}
-button{ 
-
-}
-
-main ul{
-  display: block
-    inline-blockleft
-}
-
-
-/* Style Rules for body and images*/
-
-body {
-  background-color: #DAD7CD;
-}
-
-  img {
-  max-width: 100%;
-  display: block;
+nav ul li:last-child:hover a {
+    opacity: 0.85;
+    transform: translateY(-2px);
 }
 
 /* Styles for Home page */
 
 
+.logo {}
 
-/*Style Rules for Blog page*/
+/* All Links */
 
-.blog 
+/* Styles for All pages */
+h2 {}
+
+main {}
+
+img {
+    max-width: 100%
+}
+
+ul {}
+
+li {}
+
+/* Styles for Home Page */
+mission-box {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    background: rgba((255, 255, 255, 0.9);
+            padding: 1.5rem;
+            max-width: 350px;
+            border-radius: 8px;
+    }
+
+    button {}
+
+    main ul {
+        display: block inline-blockleft
+    }
+
+
+    /* Style Rules for body and images*/
+
+    body {
+        background-color: #DAD7CD;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    /* Styles for Home page */
+
+
+
+    /*Style Rules for Blog page*/
+
+    .blog
