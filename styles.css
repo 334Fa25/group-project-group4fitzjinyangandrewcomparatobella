@@ -217,6 +217,10 @@ footer p {
 /* Styles for All pages */
 h2 {}
 
+h1{
+    text-align: center;
+}
+
 main {}
 
 img {
@@ -258,8 +262,6 @@ img {
 
 /* Styles for Home page */
 
-
-
 /*Style Rules for Blog page*/
 
 #blog img {
@@ -283,3 +285,53 @@ img {
 .section6 {
     flex: 1;
 }
+
+
+Float Example
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.jamie{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+    display: table;
+}
+
+.mina{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+    display: table;
+}
+
+.carlos{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+    display: table;
+}
+
+
+/*Style Rules for Blog page*/
+
+    .blog
+
+/* Style Rules for Services */
+.servicesgarden,
+.serviceslawn, .serviceseco, .servicesseasonal,
+.servicesspecialty{
+  display: flex;
+  gap: 20px; 
+  justify-content: space-between;
+}
+
+.section2{
+  float: right;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+
+
+
+
