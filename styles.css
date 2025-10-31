@@ -18,6 +18,7 @@ a {
 
 nav {
     background: #5e7c55;
+    margin-bottom: 20px;
 }
 
 nav ul {
@@ -54,6 +55,12 @@ nav ul li:last-child:hover a {
     transform: translateY(-2px);
 }
 
+/* Styles for footer */
+footer {
+    margin-top: 30px;
+}
+
+
 /* Styles for Home page */
 
 
@@ -80,33 +87,53 @@ mission-box {
     top: 20%;
     right: 10%;
     background: rgba(255, 255, 255, 0.9);
-            padding: 1.5rem;
-            max-width: 350px;
-            border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 350px;
+    border-radius: 8px;
 }
 
-    button {}
+button {}
 
-    main ul {
-        display: block inline-blockleft
-    }
-
-
-    /* Style Rules for body and images*/
-
-    body {
-        background-color: #DAD7CD;
-    }
-
-    img {
-        max-width: 100%;
-        display: block;
-    }
-
-    /* Styles for Home page */
+main ul {
+    display: block inline-blockleft
+}
 
 
+/* Style Rules for body and images*/
 
-    /*Style Rules for Blog page*/
+body {
+    background-color: #DAD7CD;
+}
 
-    .blog
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Styles for Home page */
+
+
+
+/*Style Rules for Blog page*/
+
+#blog img {
+    width: 300px;
+    height: 200px;
+}
+
+.container,
+.container1,
+.container2 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6 {
+    flex: 1;
+}
