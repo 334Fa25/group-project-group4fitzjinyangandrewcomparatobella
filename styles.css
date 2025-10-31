@@ -64,6 +64,10 @@ nav ul li:last-child:hover a {
 /* Styles for All pages */
 h2 {}
 
+h1{
+    text-align: center;
+}
+
 main {}
 
 img {
@@ -103,10 +107,61 @@ mission-box {
         display: block;
     }
 
-    /* Styles for Home page */
+/* Styles for Home page */
+Float Example
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.jamie{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+    display: table;
+}
+
+.mina{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+    display: table;
+}
+
+.carlos{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+    display: table;
+}
 
 
-
-    /*Style Rules for Blog page*/
+/*Style Rules for Blog page*/
 
     .blog
+
+/* Style Rules for Services */
+.servicesgarden,
+.serviceslawn, .serviceseco, .servicesseasonal,
+.servicesspecialty{
+  display: flex;
+  gap: 20px; 
+  justify-content: space-between;
+}
+
+.section2{
+  float: right;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
