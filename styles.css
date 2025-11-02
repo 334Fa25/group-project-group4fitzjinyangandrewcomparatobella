@@ -64,6 +64,139 @@ nav ul li:last-child:hover a {
     transform: translateY(-2px);
 }
 
+/*======== ABOUT =====*/
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Our Story Section */
+#our-story {
+    max-width: 80%;
+    margin: 50px auto 100px auto;
+    line-height: 1.6;
+}
+
+#our-story h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Team Members */
+.team-member {
+    margin-top: 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 80%;
+    margin: 40px auto;
+}
+
+.team-member img {
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
+.member-text h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.team-member p {
+    margin-top: 5px;
+    line-height: 1.5;
+}
+.team-member:last-of-type {
+    margin-bottom: 80px;
+}
+
+/* ======= SERVICE ====*/
+
+#frontService img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center; 
+}
+
+.page-title {
+    text-align: left;
+    font-size: 2.2rem;
+    padding: 40px 8%;
+    margin: 0;
+}
+
+.service-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 8%;
+    max-width: 1400px;
+    margin: auto;
+    align-items: flex-start;
+}
+
+.text-col {
+    width: 55%;
+}
+
+.img-col {
+    width: 45%;
+}
+
+.img-col img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.item h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    width: 55%;
+}
+
+.item p {
+    font-size: 0.9rem;
+    margin: 5px 0 0 0;
+    width: 55%;
+}
+
+.service-block:last-child p{
+    width:100%;
+    margin-left: 75px;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-left: auto;
+    width: 35%;
+    text-align: right;
+}
+
+.service-block:nth-child(even) {
+    background: rgba(0,0,0,0.03);
+}
+
+
+
 
 /* ========== Styles for Home Page / Index ========== */
 .mission-box {
@@ -289,7 +422,7 @@ Float Example
     grid-column: 1 / 3;
 }
 
-/* Submit button centered full-width */
+/* Submit button */
 #contactform button {
     grid-column: 1 / 3;
     background: #000;
@@ -416,6 +549,51 @@ li {}
     flex: 1;
 }
 
+Float Example
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.jamie{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+    display: table;
+}
+
+.mina{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+    display: table;
+}
+
+.carlos{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+    display: table;
+}
+
+
+/*========== Style Rules for Blog page============ */
+
+#centered {
+        color: #ffffff;
+  text-align-last: center;
+      position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#frontblog img {
+    width: 2000px;
+        height: 650px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+.blog {
+    max-width: 80%;
+    margin:20px auto;
+}
 
 /* Style Rules for Services */
 .servicesgarden,
