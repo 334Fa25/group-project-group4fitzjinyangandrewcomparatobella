@@ -114,6 +114,16 @@ nav ul li:last-child:hover a {
     margin-bottom: 80px;
 }
 
+/* ======= SERVICE ====*/
+
+.frontService img {
+  width: 100%; /* Or a fixed width */
+  height: 400px; /* Or a fixed height */
+  object-fit: cover; /* Scales the image to fill the element, potentially cropping */
+  object-position: center; /* Positions the image within the element (e.g., top, bottom, left, right, or percentages) */
+}
+
+
 
 
 /* ========== Main Contact Section ========== */
@@ -178,7 +188,7 @@ nav ul li:last-child:hover a {
     grid-column: 1 / 3;
 }
 
-/* Submit button centered full-width */
+/* Submit button */
 #contactform button {
     grid-column: 1 / 3;
     background: #000;
@@ -363,7 +373,8 @@ Float Example
 }
 
 
-/*Style Rules for Blog page*/
+/*========== Style Rules for Blog page============ */
+
 #centered {
         color: #ffffff;
   text-align-last: center;
