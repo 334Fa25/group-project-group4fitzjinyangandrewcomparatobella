@@ -24,6 +24,7 @@ body{
 
 nav {
     background: #5e7c55;
+    margin-bottom: 20px;
 }
 
 nav ul {
@@ -61,6 +62,7 @@ nav ul li:last-child:hover a {
     opacity: 0.85;
     transform: translateY(-2px);
 }
+
 
 /* ========== Main Contact Section ========== */
 #contact {
@@ -160,6 +162,7 @@ footer {
     padding: 40px 50px;
     font-size: 14px;
     color: black;
+    margin-top: 30px;
 }
 
 .footer-container {
@@ -214,6 +217,10 @@ footer p {
 /* Styles for All pages */
 h2 {}
 
+h1{
+    text-align: center;
+}
+
 main {}
 
 img {
@@ -230,33 +237,101 @@ mission-box {
     top: 20%;
     right: 10%;
     background: rgba(255, 255, 255, 0.9);
-            padding: 1.5rem;
-            max-width: 350px;
-            border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 350px;
+    border-radius: 8px;
 }
 
-    button {}
+button {}
 
-    main ul {
-        display: block inline-blockleft
-    }
-
-
-    /* Style Rules for body and images*/
-
-    body {
-        background-color: #DAD7CD;
-    }
-
-    img {
-        max-width: 100%;
-        display: block;
-    }
-
-    /* Styles for Home page */
+main ul {
+    display: block inline-blockleft
+}
 
 
+/* Style Rules for body and images*/
 
-    /*Style Rules for Blog page*/
+body {
+    background-color: #DAD7CD;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Styles for Home page */
+
+/*Style Rules for Blog page*/
+
+#blog img {
+    width: 300px;
+    height: 200px;
+}
+
+.container,
+.container1,
+.container2 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6 {
+    flex: 1;
+}
+
+
+Float Example
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.jamie{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+    display: table;
+}
+
+.mina{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+    display: table;
+}
+
+.carlos{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+    display: table;
+}
+
+
+/*Style Rules for Blog page*/
 
     .blog
+
+/* Style Rules for Services */
+.servicesgarden,
+.serviceslawn, .serviceseco, .servicesseasonal,
+.servicesspecialty{
+  display: flex;
+  gap: 20px; 
+  justify-content: space-between;
+}
+
+.section2{
+  float: right;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+
+
+
+
