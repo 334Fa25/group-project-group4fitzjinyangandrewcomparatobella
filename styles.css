@@ -312,8 +312,21 @@ Float Example
 
 
 /*Style Rules for Blog page*/
+#centered {
+        color: #ffffff;
+  text-align-last: center;
+      position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-    .blog
+#frontblog img {
+    width: 2000px;
+        height: 650px;
+    margin: auto;
+    margin-bottom: 20px;
+}
 
 /* Style Rules for Services */
 .servicesgarden,
