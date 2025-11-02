@@ -45,7 +45,27 @@ Float Example
   clear: both;
   display: table;
 }
+
 =========================================
+
+Linking a button to take you somewhere:
+<a href="page.html" class="button">Go to Page</a>
+
+=========================================
+
+/* Clear floats after image containers */
+.meettheteam::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.meettheteam{
+    display: flex;
+}
+
+=========================================
+
 /* HTML and Body styles */
 
 html {
