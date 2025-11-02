@@ -324,8 +324,12 @@ Float Example
 #frontblog img {
     width: 2000px;
         height: 650px;
-    margin: auto;
     margin-bottom: 20px;
+    max-width: 100%;
+}
+.blog {
+    max-width: 80%;
+    margin:20px auto;
 }
 
 /* Style Rules for Services */
