@@ -111,7 +111,7 @@ nav ul li:last-child:hover a {
     background: rgba(0,0,0,0.03);
 }
 
-/* ======= SERVICE ====*/
+/* ======= SERVICE ==== */
 
 #frontService img {
   width: 100%;
@@ -191,7 +191,6 @@ nav ul li:last-child:hover a {
     background: rgba(0,0,0,0.03);
 }
 
-
 /* ========== Styles for Home Page / Index ========== */
 .mission-box {
     position: absolute;
@@ -224,19 +223,46 @@ main ul {
 
 .homeservices h3{
     font-family: sans-serif;
+    
 }
 
-.homeservice {
+.homeservices {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
 
+.service-text{
+    flex: 1;
+}
+
+.service-text p {
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.service-text span {
+  font-weight: bold;
+  color: #444;
+}
+
+.service img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
 .homeservices img{
     float: right;
-    width:  100px;
-    height: 100px;
+    width:  150px;
+    height: 150px;
+    object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .homeservice p{
@@ -316,9 +342,7 @@ img {
     display: block;
 }
 
-Float Example
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 * {
   box-sizing: border-box;
 }
@@ -569,7 +593,615 @@ Float Example
 
 /*========== Style Rules for Blog page============ */
 
-#centered {
+    a,
+    p,
+    h2,
+    h1 h3 {
+        font-family: sans-serif;
+    }
+
+    body {
+        background-color: #E6E6E6;
+    }
+
+    #container {
+        width: 100%;
+    }
+
+    /* NAV */
+
+    nav {
+        background: #5e7c55;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        background-color: #588157;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        padding: 30px;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        transition: background 0.25s, color 0.25s;
+    }
+
+    nav a:hover {
+        background-color: #3A5A40;
+        color: white;
+    }
+
+    nav ul li:last-child a {
+        background-color: #000;
+        color: white;
+        border-radius: 12px;
+        padding: 15px 15px 15px 15px;
+        height: auto;
+    }
+
+    nav ul li:last-child:hover a {
+        opacity: 0.85;
+        transform: translateY(-2px);
+    }
+
+    /*======== ABOUT =====*/
+
+    #container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Our Story Section */
+    #our-story {
+        max-width: 80%;
+        margin: 50px auto 100px auto;
+        line-height: 1.6;
+    }
+
+    #our-story h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    /* Team Members */
+    .team-member {
+        margin-top: 22px;
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        max-width: 80%;
+        margin: 40px auto;
+    }
+
+    .team-member img {
+        width: 300px;
+        height: 300px;
+        object-fit: fill;
+        border-radius: 50%;
+    }
+
+    .member-text h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .team-member p {
+        margin-top: 5px;
+        line-height: 1.5;
+    }
+
+    .team-member:last-of-type {
+        margin-bottom: 80px;
+    }
+
+    /* ======= SERVICE ====*/
+
+    #frontService img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .page-title {
+        text-align: left;
+        font-size: 2.2rem;
+        padding: 40px 8%;
+        margin: 0;
+    }
+
+    .service-block {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 60px 8%;
+        max-width: 1400px;
+        margin: auto;
+        align-items: flex-start;
+    }
+
+    .text-col {
+        width: 55%;
+    }
+
+    .img-col {
+        width: 45%;
+    }
+
+    .img-col img {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .text-col h2 {
+        margin-bottom: 25px;
+    }
+
+    .item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+        position: relative;
+    }
+
+    .item h3 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0;
+        width: 55%;
+    }
+
+    .item p {
+        font-size: 0.9rem;
+        margin: 5px 0 0 0;
+        width: 55%;
+    }
+
+    .service-block:last-child p {
+        width: 100%;
+        margin-left: 75px;
+    }
+
+    .price {
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin-left: auto;
+        width: 35%;
+        text-align: right;
+    }
+
+    .service-block:nth-child(even) {
+        background: rgba(0, 0, 0, 0.03);
+    }
+
+
+
+
+    /* ========== Styles for Home Page / Index ========== */
+    .mission-box {
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 1.5rem;
+        max-width: 300px;
+        border-radius: 3px;
+    }
+
+    .mission-box a {
+        color: green;
+        background-color: #ffffff;
+        border-radius: 1px;
+    }
+
+    main ul {
+        display: block inline-blockleft
+    }
+
+    .homeservices section1 {
+        text-align: left;
+    }
+
+    .homeservices h1 {
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .homeservices h3 {
+        font-family: sans-serif;
+    }
+
+    .homeservice {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .homeservices img {
+        float: right;
+        width: 100px;
+        height: 100px;
+    }
+
+    .homeservice p {
+        color: #333;
+        margin-bottom: 8px;
+        line-height: 1.5;
+    }
+
+    .homeservice span {
+        font-weight: bold;
+        color: #444;
+    }
+
+    @media (min-width: 800px) {
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px 60px;
+        }
+
+        .service {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+    }
+
+    .price {
+        display: block;
+        color: #555;
+        font-weight: bold;
+        margin-top: 0.3em;
+    }
+
+    .homeservice p {
+        margin: 0.3em 0;
+        color: #333;
+        line-height: 1.4;
+    }
+
+    .section1 {
+        margin: top-left;
+        width: 45%;
+        padding: 10px;
+    }
+
+    .section2 {
+        margin: top-right;
+        width: 45%;
+        padding: 10px;
+    }
+
+    .section3 {
+        margin: top-center;
+        width: 45%;
+        padding: 10px;
+    }
+
+    .section4 {
+        margin: left;
+        width: 45%;
+        padding: 10px;
+    }
+
+    .section5 {
+        margin: left;
+        width: 45%;
+        padding: 10px;
+    }
+
+    /* Style Rules for body and images*/
+
+    body {
+        background-color: #DAD7CD;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+
+    /* Create three equal columns that sits next to each other */
+    .jamie {
+        flex: 33.33%;
+        padding: 5px;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .mina {
+        flex: 33.33%;
+        padding: 5px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .carlos {
+        flex: 33.33%;
+        padding: 5px;
+        overflow: hidden;
+        text-align: right;
+    }
+
+    .meettheteam {
+        display: flex;
+        font-family: sans-serif;
+    }
+
+    .meettheteam h1 {
+        text-align: center;
+    }
+
+    /* ========== Main Contact Section ========== */
+    #contact {
+        width: 85%;
+        margin: 60px auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 50px;
+        align-items: start;
+    }
+
+    #contactform {
+        width: 100%;
+    }
+
+    .contactLeft h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .contactLeft p {
+        color: #6b6b6b;
+        line-height: 1.6;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    /* Form layout */
+    #contactform {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px 25px;
+        margin-top: 5px;
+    }
+
+    /* Labels */
+    .form-row label {
+        display: block;
+        font-size: 11px;
+        color: #444;
+        margin-bottom: 4px;
+    }
+
+    /* Inputs */
+    .form-row input,
+    .form-row textarea {
+        width: 100%;
+        padding: 10px 14px;
+        border-radius: 5px;
+        border: 1px solid #c9c9c9;
+        background: #fff;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    /* Message box spans full width */
+    #message {
+        grid-column: 1 / 3;
+        resize: vertical;
+    }
+
+    #email {
+        grid-column: 1 / 3;
+    }
+
+    /* Submit button */
+    #contactform button {
+        grid-column: 1 / 3;
+        background: #000;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .form-row.full {
+        grid-column: 1 / 3;
+    }
+
+    #contactform button {
+        width: 100%;
+        display: block;
+    }
+
+    #contactform button:hover {
+        opacity: 0.9;
+    }
+
+    .form-row:last-child {
+        margin-top: 10px;
+    }
+
+
+
+    /* ========== Footer ========== */
+    footer {
+        background: #588157;
+        padding: 40px 50px;
+        font-size: 14px;
+        color: black;
+        margin-top: 30px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-col {
+        flex: 1;
+        margin: 0 20px;
+    }
+
+    .footer-col ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-col li {
+        margin-bottom: 6px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: black;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    footer h4,
+    footer strong {
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    footer p {
+        line-height: 1.4;
+        max-width: 230px;
+        /* prevents paragraph from stretching too far */
+    }
+
+    /* Styles for Home page */
+
+    .logo {}
+
+    /* All Links */
+
+    /* Styles for All pages */
+
+    h1 {
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%
+    }
+
+    /* Styles for Home Page */
+    mission-box {
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 1.5rem;
+        max-width: 350px;
+        border-radius: 8px;
+    }
+
+    main ul {
+        display: block inline-blockleft
+    }
+
+
+    /* Style Rules for body and images*/
+
+    body {
+        background-color: #DAD7CD;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    /* Styles for Home page */
+
+    /*Style Rules for Blog page*/
+    .blog h3 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .blog p {
+        margin-right: 60px;
+    }
+
+    #blog img {
+        width: 300px;
+        height: 200px;
+        flex-wrap: wrap;
+    }
+    
+    .blog h1 { 
+    position: fixed;
+        font: #ffffff;
+    }
+
+    .container,
+    .container1,
+    .container2 {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5,
+    .section6 {
+        flex: 1;
+    }
+
+
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .jamie {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        display: table;
+    }
+
+    .mina {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        display: table;
+    }
+
+    .carlos {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        display: table;
+    }
+
+
+    /*========== Style Rules for Blog page============ */
+
+    .centered {
         color: #ffffff;
   text-align-last: center;
       position: absolute;
@@ -604,8 +1236,6 @@ Float Example
   width: 33.33%;
   padding: 5px;
 }
-
-/* ==========  ========== */
 
 
 
