@@ -578,6 +578,11 @@ body {
         height: 200px;
         flex-wrap: wrap;
     }
+    
+    .blog h1 { 
+    position: fixed;
+        font: #ffffff;
+    }
 
     .container,
     .container1,
@@ -596,7 +601,6 @@ body {
         flex: 1;
     }
 
-    Float Example
 
     /* Three image containers (use 25% for four, and 50% for two, etc) */
     .jamie {
