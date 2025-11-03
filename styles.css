@@ -579,11 +579,12 @@ Float Example
 }
 
 #frontblog img {
-    width: 2000px;
-        height: 650px;
-    margin-bottom: 20px;
-    max-width: 100%;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center; 
 }
+
 .blog {
     max-width: 80%;
     margin:20px auto;
