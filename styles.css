@@ -1036,8 +1036,6 @@ Float Example
         margin-top: 10px;
     }
 
-
-
     /* ========== Footer ========== */
     footer {
         background: #588157;
@@ -1106,6 +1104,7 @@ Float Example
 
     img {
         max-width: 100%
+            height: 500px;
     }
 
     /* Styles for Home Page */
@@ -1136,6 +1135,7 @@ Float Example
     }
 
     /* Styles for Home page */
+
 
     /*Style Rules for Blog page*/
     .blog h3 {
