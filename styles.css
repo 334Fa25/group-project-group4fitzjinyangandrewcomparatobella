@@ -152,7 +152,7 @@ footer p {
    03. PAGE-SPECIFIC STYLES
 =================================================================== */
 
-/* ========== HOME PAGE ========== */
+/* ========== HOME PAGE / INDEX ========== */
 
 #reddoorimage {
     position: relative;
@@ -222,6 +222,17 @@ footer p {
 
 .meettheteam h1 {
     text-align: center;
+    color:black;
+}
+
+.meettheteam a{
+    color: black;
+    text-decoration: none;
+}
+
+.homeservices a{
+    color: black;
+    text-decoration: none;
 }
 
 .jamie {
@@ -243,6 +254,19 @@ footer p {
     padding: 5px;
     overflow: hidden;
     text-align: right;
+}
+
+@media (max-width: 600px) {
+    .desktop-only-image{
+        height: auto;
+    }
+    
+    .mission-box{
+        display: block;
+    }
+    .parent-container {
+        
+}
 }
 
 /* ========== ABOUT PAGE ========== */
@@ -568,7 +592,80 @@ footer p {
 }
 
 /* Tablet (and smaller) */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    
+    /*NAV*/
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    nav ul li:last-child a {
+        border-radius: 0; 
+    }
+
+    /*About US*/
+    #our-story,
+    .team-member {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .team-member {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .team-member img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .member-text h3 {
+        font-size: 24px;
+    }
+
+    /* FOOTER*/
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-col {
+        margin: 20px 0;
+    }
+
+    footer p {
+        max-width: 90%; 
+        margin: 0 auto;
+    }
+
+    .team-member:nth-child(even) {
+        background: none;
+    }
+
+    .team-member:last-of-type {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+}
+    
     /* SERVICE */
     #frontService img {
         height: 420px;
@@ -703,7 +800,25 @@ footer p {
 
 
 /* Phones */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
+    
+    #our-story h2 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 14px; 
+    }
+
+    .team-member img {
+        width: 150px; 
+        height: 150px;
+    }
+
+    .member-text h3 {
+        font-size: 20px;
+    }
+}
     /* SERVICE */
     #frontService img {
         height: 280px;
@@ -828,7 +943,7 @@ footer p {
     line-height: 1.4;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     .services {
         display: grid;
         grid-template-columns: 1fr 1fr;
