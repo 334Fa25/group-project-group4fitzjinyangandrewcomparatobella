@@ -460,22 +460,14 @@ footer p {
 }
 
 
-.logo {}
-
-
 h1{
     text-align: center;
 }
 
-.main {}
 
 img {
     max-width: 100%
 }
-
-ul {}
-
-li {}
 
 /*Style Rules for Blog page*/
 
@@ -687,10 +679,6 @@ Float Example
     }
 
 
-    /* Styles for Home page */
-
-    .logo {}
-
     /* All Links */
 
     /* Styles for All pages */
@@ -700,8 +688,8 @@ Float Example
     }
 
     img {
-        max-width: 100%
-            height: 500px;
+        max-width: 100%;
+        height: 500px;
     }
 
     /* Styles for Home Page */
