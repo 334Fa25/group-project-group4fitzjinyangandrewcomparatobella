@@ -153,6 +153,18 @@ footer p {
 =================================================================== */
 
 /* ========== HOME PAGE / INDEX ========== */
+
+#reddoorimage {
+    position: relative;
+}
+
+#reddoorimage img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
 .mission-box {
     position: absolute;
     top: 20%;
@@ -163,10 +175,14 @@ footer p {
     border-radius: 3px;
 }
 
-.mission-box a {
-    color: green;
-    background-color: #ffffff;
-    border-radius: 1px;
+.mission-box .button {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #333;
+    border-radius: 3px;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .homeservices {
@@ -576,7 +592,80 @@ footer p {
 }
 
 /* Tablet (and smaller) */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    
+    /*NAV*/
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    nav ul li:last-child a {
+        border-radius: 0; 
+    }
+
+    /*About US*/
+    #our-story,
+    .team-member {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .team-member {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .team-member img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .member-text h3 {
+        font-size: 24px;
+    }
+
+    /* FOOTER*/
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-col {
+        margin: 20px 0;
+    }
+
+    footer p {
+        max-width: 90%; 
+        margin: 0 auto;
+    }
+
+    .team-member:nth-child(even) {
+        background: none;
+    }
+
+    .team-member:last-of-type {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+}
+    
     /* SERVICE */
     #frontService img {
         height: 420px;
@@ -646,8 +735,71 @@ footer p {
     }
 }
 
+/*BLOG*/
+@media screen and (max-width: 768px) {
+
+    .blog {
+        max-width: 90%;
+    }
+
+    .container,
+    .container1,
+    .container2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #frontblog img {
+        height: 400px;
+    }
+
+    #centered h1 {
+        font-size: 2rem;
+    }
+
+    #centered p {
+        font-size: 1.2rem;
+    }
+
+    .blog h1 {
+        position: static;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog p {
+        margin-right: 0;
+        font-size: 1rem;
+    }
+}
+
 /* Phones */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
+    
+    #our-story h2 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 14px; 
+    }
+
+    .team-member img {
+        width: 150px; 
+        height: 150px;
+    }
+
+    .member-text h3 {
+        font-size: 20px;
+    }
+}
     /* SERVICE */
     #frontService img {
         height: 280px;
@@ -699,6 +851,58 @@ footer p {
         padding-bottom: 20px;
         padding-top: 20px;
     }
+
+    /*BLOG*/
+    @media screen and (max-width: 480px) {
+
+    .blog {
+        max-width: 95%;
+        margin: 10px auto;
+    }
+
+    #frontblog img {
+        height: 250px;
+    }
+
+    #centered h1 {
+        font-size: 1.5rem;
+    }
+
+    #centered p {
+        font-size: 1rem;
+    }
+
+    .container,
+    .container1,
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    section img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .blog h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .blog h3 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .blog p {
+        font-size: 0.95rem;
+        text-align: justify;
+        margin-right: 0;
+    }
+}
+    
     
     /* CONTACT */
     #contact {
@@ -718,7 +922,7 @@ footer p {
     line-height: 1.4;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     .services {
         display: grid;
         grid-template-columns: 1fr 1fr;
