@@ -264,9 +264,6 @@ footer p {
     .mission-box{
         display: block;
     }
-    .parent-container {
-        
-}
 }
 
 /* ========== ABOUT PAGE ========== */
@@ -664,7 +661,6 @@ footer p {
         padding-bottom: 40px;
         margin-bottom: 40px;
     }
-}
     
     /* SERVICE */
     #frontService img {
@@ -748,22 +744,21 @@ footer p {
     /* Centered Blog Title */
     #centered {
         text-align: center;
-        top: 35%; /* move higher up */
-        transform: translate(-50%, -35%);
+        top: 35%; 
+        transform: translate(-50%, 300%);
         left: 50%;
     }
 
     #centered h1 {
         font-size: 2.5rem;
         color: #fff;
-        position: static; /* prevent it from overlapping */
+        position: static; 
     }
 
     #centered p {
         font-size: 1.1rem;
         color: #fff;
     }
-}
 
     /* Blog Layout Adjustments */
     .blog {
@@ -818,7 +813,6 @@ footer p {
     .member-text h3 {
         font-size: 20px;
     }
-}
     /* SERVICE */
     #frontService img {
         height: 280px;
