@@ -152,7 +152,7 @@ footer p {
    03. PAGE-SPECIFIC STYLES
 =================================================================== */
 
-/* ========== HOME PAGE ========== */
+/* ========== HOME PAGE / INDEX ========== */
 .mission-box {
     position: absolute;
     top: 20%;
@@ -206,6 +206,17 @@ footer p {
 
 .meettheteam h1 {
     text-align: center;
+    color:black;
+}
+
+.meettheteam a{
+    color: black;
+    text-decoration: none;
+}
+
+.homeservices a{
+    color: black;
+    text-decoration: none;
 }
 
 .jamie {
@@ -227,6 +238,19 @@ footer p {
     padding: 5px;
     overflow: hidden;
     text-align: right;
+}
+
+@media (max-width: 600px) {
+    .desktop-only-image{
+        height: auto;
+    }
+    
+    .mission-box{
+        display: block;
+    }
+    .parent-container {
+        
+}
 }
 
 /* ========== ABOUT PAGE ========== */
