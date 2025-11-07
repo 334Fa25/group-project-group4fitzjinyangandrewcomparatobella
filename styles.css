@@ -10,6 +10,10 @@ File name: style.class*/
     border: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 a,p, h2, h1 h3{
     font-family: sans-serif;
 }
@@ -261,112 +265,7 @@ main ul {
     margin-bottom: 50px;
 }
 
-/*.homeservice {
-  display: flex;
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
 
-.service-text{
-    flex: 1;
-}
-
-.service-text p {
-  color: #333;
-  margin-bottom: 8px;
-  line-height: 1.5;
-}
-
-.service-text span {
-  font-weight: bold;
-  color: #444;
-}
-
-.service img {
-  display: flex;
-  width: 200px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.homeservices img{
-    float: right;
-    width:  150px;
-    height: 150px;
-    object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.homeservice p{
-  color: #333;
-  margin-bottom: 8px;
-  line-height: 1.5;
-}
-
-.homeservice span{
-  font-weight: bold;
-  color: #444;
-}*/
-
-@media (min-width: 800px) {
-  .services {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px 60px;
-  }
-  .service {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
-}
-
-/*.price {
-  display: block;
-  color: #555;
-  font-weight: bold;
-  margin-top: 0.3em;
-}*/
-
-.homeservice p{
-  margin: 0.3em 0;
-  color: #333;
-  line-height: 1.4;
-}
-
-/*.section1{
-  margin: top-left;
-  width: 45%;
-  padding: 10px;
-}
-
-.section2{
-  margin: top-right;
-  width: 45%;
-  padding: 10px;
-}
-
-.section3{
-  margin: top-center;
-  width: 45%;
-  padding: 10px;
-}
-
-.section4{
-  margin: left;
-  width: 45%;
-  padding: 10px;
-}
-
-.section5{
-  margin: left;
-  width: 45%;
-  padding: 10px;
-}*/
 
 /* Style Rules for body and images*/
 
@@ -561,22 +460,14 @@ footer p {
 }
 
 
-.logo {}
-
-
 h1{
     text-align: center;
 }
 
-.main {}
 
 img {
     max-width: 100%
 }
-
-ul {}
-
-li {}
 
 /*Style Rules for Blog page*/
 
@@ -817,10 +708,267 @@ Float Example
     .service-block:nth-child(even) {
         background: rgba(0, 0, 0, 0.03);
     }
+    
+
+    @media (min-width: 800px) {
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px 60px;
+        }
+
+        .service {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+    }
+
+    .price {
+        display: block;
+        color: #555;
+        font-weight: bold;
+        margin-top: 0.3em;
+    }
+
+    .homeservice p {
+        margin: 0.3em 0;
+        color: #333;
+        line-height: 1.4;
+    }
+
+    .section1 {
+        margin: top-left;
+        width: 45%;
+        padding: 10px;
+    }
+
+    .section2 {
+        margin: top-right;
+        width: 45%;
+        padding: 10px;
+    }
+
+    .section3 {
+        margin: top-center;
+        width: 45%;
+        padding: 10px;
+    }
+
+    .section4 {
+        margin: left;
+        width: 45%;
+        padding: 10px;
+    }
+
+    .section5 {
+        margin: left;
+        width: 45%;
+        padding: 10px;
+    }
+
+    /* Style Rules for body and images*/
+
+    body {
+        background-color: #DAD7CD;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+
+    /* Create three equal columns that sits next to each other */
+    .jamie {
+        flex: 33.33%;
+        padding: 5px;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .mina {
+        flex: 33.33%;
+        padding: 5px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .carlos {
+        flex: 33.33%;
+        padding: 5px;
+        overflow: hidden;
+        text-align: right;
+    }
+
+    .meettheteam {
+        display: flex;
+        font-family: sans-serif;
+    }
+
+    .meettheteam h1 {
+        text-align: center;
+    }
+
+
+    /* All Links */
+
+    /* Styles for All pages */
+
+    h1 {
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: 500px;
+    }
+
+    /* Styles for Home Page */
+    mission-box {
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 1.5rem;
+        max-width: 350px;
+        border-radius: 8px;
+    }
+
+    main ul {
+        display: block inline-blockleft
+    }
+
+
+    /* Style Rules for body and images*/
+
+    body {
+        background-color: #DAD7CD;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    /* Styles for Home page */
+
+
+    /*Style Rules for Blog page*/
+    .blog h3 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .blog p {
+        margin-right: 60px;
+    }
+
+    #blog img {
+        width: 300px;
+        height: 200px;
+        flex-wrap: wrap;
+    }
+    
+    .blog h1 { 
+    position: fixed;
+        font: #ffffff;
+    }
+
+    .container,
+    .container1,
+    .container2 {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5,
+    .section6 {
+        flex: 1;
+    }
+
+
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .jamie {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        display: table;
+    }
+
+    .mina {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        display: table;
+    }
+
+    .carlos {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        display: table;
+    }
+
+
+    /*========== Style Rules for Blog page============ */
+
+#frontblog img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center; 
+}
+
+#frontblog{
+    position: relative;
+  width: 100%;
+}
+
+.blog {
+    max-width: 80%;
+    margin:20px auto;
+}
+
+/* Style Rules for Services */
+.servicesgarden,
+.serviceslawn, .serviceseco, .servicesseasonal,
+.servicesspecialty{
+  display: flex;
+  gap: 20px; 
+  justify-content: space-between;
+}
+
+.section2{
+  float: right;
+  width: 33.33%;
+  padding: 5px;
+}
 
 /* ========== RESPONSIVE MEDIA QUERIES ========== */
 
 /* Tablet */
+/* HOME */
+@media (min-width: 768px) {
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 60px;
+  }
+  .service {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+.homeservice p{
+  margin: 0.3em 0;
+  color: #333;
+  line-height: 1.4;
+}
 
 /*Service*/
 @media (max-width: 768px) {
@@ -916,7 +1064,9 @@ Float Example
     .service-block {
         font-size: 1.2rem;
         top: 50%;
-        width: 90%;
+        width: 100%;
+    padding: 20px 5%;
+    flex-direction: column;
     }
 
     .text-col h2 {
@@ -949,6 +1099,8 @@ Float Example
         padding-bottom: 20px;
         padding-top: 20px;
     }
+    
+    
     
 }
 
