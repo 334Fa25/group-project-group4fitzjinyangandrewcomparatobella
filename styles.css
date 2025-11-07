@@ -262,11 +262,9 @@ footer p {
     }
     
     .mission-box{
-        display: block;
+       top: 70%;
+        align-content: center;
     }
-    .parent-container {
-        
-}
 }
 
 /* ========== ABOUT PAGE ========== */
