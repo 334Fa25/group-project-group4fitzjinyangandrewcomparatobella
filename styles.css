@@ -734,10 +734,39 @@ footer p {
 }
 
 /*BLOG*/
-@media screen and (max-width: 768px) {
+/* ---------- Tablet View (≤800px) ---------- */
+@media screen and (max-width: 800px) {
 
+    /* Front Blog Image */
+    #frontblog img {
+        height: 400px;
+        object-position: center;
+    }
+
+    /* Centered Blog Title */
+    #centered {
+        text-align: center;
+        top: 35%; /* move higher up */
+        transform: translate(-50%, -35%);
+        left: 50%;
+    }
+
+    #centered h1 {
+        font-size: 2.5rem;
+        color: #fff;
+        position: static; /* prevent it from overlapping */
+    }
+
+    #centered p {
+        font-size: 1.1rem;
+        color: #fff;
+    }
+}
+
+    /* Blog Layout Adjustments */
     .blog {
         max-width: 90%;
+        margin: 0 auto;
     }
 
     .container,
@@ -745,19 +774,7 @@ footer p {
     .container2 {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
-    }
-
-    #frontblog img {
-        height: 400px;
-    }
-
-    #centered h1 {
-        font-size: 2rem;
-    }
-
-    #centered p {
-        font-size: 1.2rem;
+        gap: 25px;
     }
 
     .blog h1 {
@@ -765,18 +782,20 @@ footer p {
         text-align: center;
         font-size: 2rem;
         margin-bottom: 20px;
-    }
-
-    section img {
-        width: 100%;
-        height: auto;
+        color: #333;
     }
 
     .blog p {
         margin-right: 0;
         font-size: 1rem;
     }
+
+    section img {
+        width: 100%;
+        height: auto;
+    }
 }
+
 
 /* Phones */
 @media screen and (max-width: 480px) {
@@ -863,7 +882,7 @@ footer p {
     }
 
     #centered h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     #centered p {
@@ -899,6 +918,8 @@ footer p {
         text-align: justify;
         margin-right: 0;
     }
+        
+
 }
     
     
