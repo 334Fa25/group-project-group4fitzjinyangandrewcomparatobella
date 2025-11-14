@@ -66,6 +66,19 @@ nav ul {
     align-items: center;
     display: flex;
     justify-content: center;
+    padding: 0;
+}
+
+/* LOGO styling */
+nav ul .logo a {
+    padding: 10px 20px;
+}
+
+nav ul .logo img {
+    height: 45px;
+    width: auto;       
+    display: block;
+    object-fit: contain;
 }
 
 nav a {
@@ -83,12 +96,12 @@ nav a:hover {
     color: white;
 }
 
+/* FREE QUOTE BUTTON */
 nav ul li:last-child a {
     background-color: #000;
     color: white;
     border-radius: 12px;
-    padding: 15px 15px 15px 15px;
-    height: auto;
+    padding: 15px 18px;
 }
 
 nav ul li:last-child:hover a {
@@ -608,8 +621,17 @@ footer p {
         font-size: 16px;
     }
 
+    nav ul .logo a {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    nav ul .logo img {
+        height: 40px;
+    }
+
     nav ul li:last-child a {
-        border-radius: 0; 
+        border-radius: 0;
     }
 
     /*About US*/
@@ -802,8 +824,46 @@ footer p {
         font-size: 28px;
     }
 
+     nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Center logo */
+    nav ul .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul .logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+}
+
+
+    nav ul .logo img {
+        height: 32px;
+        margin: 0 auto;
+    }
+
     nav a {
-        font-size: 14px; 
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    nav ul li:last-child a {
+        padding: 12px;
+        font-size: 15px;
+        border-radius: 0;
     }
 
     .team-member img {
